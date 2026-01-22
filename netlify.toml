@@ -1,2 +1,2 @@
 [functions]
-  external_node_modules = ["@netlify/open-api"]
+  included_files = ["./node_modules/@netlify/open-api/**/*"]
