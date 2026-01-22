@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@netlify/api": "14.0.13"
+  },
+  "type": "module"
+}
