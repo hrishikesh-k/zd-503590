@@ -1,7 +1,11 @@
-import { NetlifyAPI } from '@netlify/api'
+import { createRequire } from 'module';
+// TODO: remove once Node.js supports JSON imports with pure ES modules without
+// any experimental flags
+const require = createRequire(import.meta.url);
+export const openApiSpec = require('@netlify/open-api');
 
 export default async function() {
-  const client = new NetlifyAPI('1234myAccessToken')
+  console.log(openApiSpec)
   return Response.json({
     msg: 'done'
   })
