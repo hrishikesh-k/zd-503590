@@ -2,5 +2,8 @@
   "dependencies": {
     "@netlify/api": "14.0.13"
   },
+  "overrides": {
+    "@netlify/open-api": "2.45.0"
+  },
   "type": "module"
 }
